@@ -1,0 +1,27 @@
+body {
+    background-color: #fbf6ec;
+    overflow: hidden;
+}
+
+.home-link {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    padding: 10px;
+    font-size: 40px;
+    color: #12448E;
+    text-decoration: none;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.home-link:hover {
+    font-weight: bold;
+    font-size: 45px;
+}
+
+p {
+    text-align: center;
+    font-family: 'Mooli', sans-serif;
+    margin-top: 300px;
+    color: #12448E;
+}
