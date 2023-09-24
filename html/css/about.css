@@ -1,0 +1,79 @@
+body {
+    background-color: #fbf6ec;
+    overflow: hidden;
+}
+
+.home-link {
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    padding: 10px;
+    font-size: 40px;
+    color: #12448E;
+    text-decoration: none;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.home-link:hover {
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.photo-box {
+    width: 400px;
+    height: 450px;
+    overflow: hidden; /* hides overflow if img larger*/
+    border-radius: 10px;
+    top: 150px;
+    left: 100px;
+    box-shadow: 3px 3px 5px #4b82c2;
+    position: absolute;
+}
+
+.photo-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.subtitle {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 24px; 
+    color: #12448E;
+    text-align: left;
+    position: absolute;
+    left: 550px;
+    top: 150px; 
+}
+
+.about-container {
+    margin-top: 220px;
+    margin-left: 550px;
+    max-width: 500px;
+    font-family: 'Mooli', sans-serif;
+    color: #12448E;
+
+}
+
+.about-container p {
+    margin-bottom: 20px;
+}
+
+footer {
+    color: #12448E;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Cedarville Cursive', cursive;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+footer a {
+    color: #12448E;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
