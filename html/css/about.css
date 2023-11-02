@@ -1,5 +1,5 @@
 body {
-    background-color: url('abtmebg.jpg');
+    background-image: url('abtmebg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -15,28 +15,12 @@ body {
     color: #12448E;
     text-decoration: none;
     font-family: 'Cedarville Cursive', cursive;
+    z-index: 9999;
 }
 
 .home-link:hover {
     font-weight: bold;
     font-size: 45px;
-}
-
-.photo-box {
-    width: 400px;
-    height: 450px;
-    overflow: hidden; /* hides overflow if img larger*/
-    border-radius: 10px;
-    top: 150px;
-    left: 100px;
-    box-shadow: 3px 3px 5px #4b82c2;
-    position: absolute;
-}
-
-.photo-box img {
-    width: 100%;
-    height: auto;
-    display: block;
 }
 
 .subtitle {
@@ -45,17 +29,20 @@ body {
     color: #12448E;
     text-align: left;
     position: absolute;
-    left: 550px;
-    top: 150px; 
+    left: 19px;
+    top: -40px; 
 }
 
 .about-container {
-    margin-top: 220px;
-    margin-left: 550px;
     max-width: 500px;
+    text-align: left;
+    position: absolute;
+    padding: 20px;
     font-family: 'Mooli', sans-serif;
     color: #12448E;
-
+    top: 190px;
+    left: 500px;
+    padding: 20px;
 }
 
 .about-container p {
@@ -79,4 +66,80 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+.card-container {
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Cedarville Cursive', cursive; 
+    border-radius: 10px;
+    margin-right: 1000px;
+}
+
+.card {
+    width: 300px;
+    height: 500px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.card-front img {
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.card-back {
+    background-color: #fbf6ec;
+    color: #12448E;
+    text-align: center;
+    transform: rotateY(180deg);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-back .text-content{
+    max-width: 200px;
+}
+
+.card-back h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.card-back ul{
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.card-back ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Mooli', sans-serif;
 }
