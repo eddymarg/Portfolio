@@ -8,10 +8,7 @@ body {
 
 .home-link {
     position: absolute;
-    top: 20px;
-    left: 70px;
-    padding: 10px;
-    font-size: 40px;
+    font-size: 50px;
     color: #12448E;
     text-decoration: none;
     font-family: 'Cedarville Cursive', cursive;
@@ -20,7 +17,7 @@ body {
 
 .home-link:hover {
     font-weight: bold;
-    font-size: 45px;
+    font-size: 55px;
 }
 
 .subtitle {
@@ -29,24 +26,15 @@ body {
     color: #12448E;
     text-align: left;
     position: absolute;
-    left: 19px;
-    top: -40px; 
 }
 
 .about-container {
     max-width: 500px;
     text-align: left;
-    position: absolute;
-    padding: 20px;
+    /* position: absolute; */
     font-family: 'Mooli', sans-serif;
     color: #12448E;
-    top: 190px;
-    left: 500px;
-    padding: 20px;
-}
-
-.about-container p {
-    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 footer {
@@ -57,6 +45,10 @@ footer {
     position: absolute;
     bottom: 0px;
     width: 100%;
+}
+
+footer p {
+    margin-bottom: 10px;
 }
 
 footer a {
