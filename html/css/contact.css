@@ -19,6 +19,14 @@ body {
     font-size: 45px;
 }
 
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.logo {
+    transition: transform 0.3s ease-in-out;
+}
+
 p {
     text-align: center;
     font-family: 'Mooli', sans-serif;
